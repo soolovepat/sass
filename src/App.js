@@ -34,7 +34,7 @@ function todoReducer(todos, action) {
 const App = () => {
   const [todos, dispatch] = useReducer(todoReducer, undefined, createBulkTodos);
 
-  const nextId = useRef(4);
+  const nextId = useRef(2501);
 
   const onInsert = useCallback((text) => {
     const todo = {
